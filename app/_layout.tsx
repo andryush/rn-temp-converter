@@ -4,6 +4,8 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
+import { config } from '@/config/gluestack-ui.config';
+
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
@@ -27,7 +29,7 @@ export default function RootLayout() {
 
 const RootLayoutNav = () => {
   return (
-    <GluestackUIProvider>
+    <GluestackUIProvider config={config}>
       <Stack>
         <Stack.Screen
           name="index"
