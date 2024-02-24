@@ -29,7 +29,7 @@ export default function RootLayout() {
 
 const RootLayoutNav = () => {
   return (
-    <GluestackUIProvider config={config}>
+    <GluestackUIProvider config={config} colorMode="light">
       <Stack>
         <Stack.Screen
           name="index"
