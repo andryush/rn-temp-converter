@@ -1,4 +1,4 @@
-import { Box, ImageBackground, Text } from '@gluestack-ui/themed';
+import { ImageBackground, View, Text } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import coldBg from '@/assets/images/cold.png';
@@ -6,12 +6,12 @@ import hotBg from '@/assets/images/hot.png';
 
 const Page = () => {
   return (
-    <ImageBackground source={coldBg} h="$full">
+    <ImageBackground source={coldBg} style={{ height: '100%' }}>
       <SafeAreaProvider>
         <SafeAreaView>
-          <Box h="$full" w="$full" justifyContent="center" alignItems="center">
+          <View>
             <Text>aaaa</Text>
-          </Box>
+          </View>
         </SafeAreaView>
       </SafeAreaProvider>
     </ImageBackground>
