@@ -2,7 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   image: {
+    flex: 1,
+    width: '100%',
     height: '100%',
+    resizeMode: 'cover',
   },
   container: {
     flex: 1,
@@ -12,7 +15,7 @@ export const styles = StyleSheet.create({
     gap: 20,
   },
   temperature: {
-    fontSize: 90,
+    fontSize: 50,
     color: 'white',
   },
   inputContainer: {
@@ -33,20 +36,42 @@ export const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     paddingRight: 10,
   },
-  button: {
-    backgroundColor: '#000000',
-    color: '#ffffff',
+  buttonsContainer: {
+    display: 'flex',
     width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  button: {
+    backgroundColor: '#FFFFFF',
+    width: '50%',
     height: 50,
     padding: 10,
     borderRadius: 4,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  buttonLeft: {
+    borderTopEndRadius: 0,
+    borderBottomEndRadius: 0,
+  },
+  buttonRight: {
+    borderTopStartRadius: 0,
+    borderBottomStartRadius: 0,
+  },
   buttonText: {
+    color: '#000000',
+    display: 'flex',
+    fontSize: 22,
+  },
+  buttonTextSelected: {
     color: '#FFFFFF',
     display: 'flex',
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: 'bold',
+  },
+  buttonActive: {
+    backgroundColor: '#52c41a',
   },
 });
